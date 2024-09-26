@@ -1,0 +1,10 @@
+<div class="login-container">
+  <form (ngSubmit)="onLogin()" #loginForm="ngForm"> <!-- onLogin() metodu çağrılıyor -->
+    <div class="form-group">
+      <h2>Hero's Journey</h2>
+      <label class="col-form-label mt-2" for="username">Kahramanın Adını Giriniz: </label>
+      <input type="text" class="form-control" placeholder="Hero" id="username" name="username" [(ngModel)]="heroName" required>
+      <button type="submit" class="btn btn-info mt-2">Oyuna Başla</button>
+    </div>
+  </form>
+</div>

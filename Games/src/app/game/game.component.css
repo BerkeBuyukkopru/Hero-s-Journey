@@ -1,0 +1,70 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0; /* Sayfa kenarındaki boşluğu sıfırlar */
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2%; /* Orantılı padding */
+  background-image: url('src/assets/images/background.jpg');
+  background-size: cover; /* Resmi kapsayıcıya uydurur */
+  background-position: center; /* Resmi ortalar */
+  background-repeat: no-repeat; /* Resmi tekrar etmez */
+  height: 100vh; /* Ekranın tamamını kaplar */
+  box-sizing: border-box; /* Padding ve border'ı genişliğe dahil eder */
+}
+
+
+.logText {
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  margin:24px;
+}
+
+.marginTop {
+  margin-top: 64px;
+}
+
+.character-information {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: min-content;
+}
+
+.character-avatars{
+  display: flex;
+  justify-content: space-between;
+  height: -webkit-fill-available; /* Açık olan boşlukları dolduruz. */
+  margin: 54px 200px;
+}
+
+.char-img {
+  aspect-ratio: 3 / 4;
+  width: 312px;
+}
+
+.hero-section, .enemy-section {
+  border: 1px solid #ccc;
+  padding: 2%; /* Orantılı padding */
+  width: 45%; /* Orantılı genişlik */
+  height: 35vh; /* Ekranın %35 yüksekliği */
+  background: rgba(15, 37, 55, 0.6); /* Transparan arka plan rengi */
+  border-radius: 8px; /* Kenarları yuvarlatır */
+  box-sizing: border-box; /* Padding ve border'ı genişliğe dahil eder */
+  overflow: hidden; /* İçerik taşarsa kaydırma çubuğu ekler */
+}
+
+.action-buttons {
+  margin-top: 2%; /* Orantılı boşluk */
+}
+
+button {
+  margin-right: 1%; /* Orantılı boşluk */
+  padding: 1% 2%; /* Orantılı padding */
+  font-size: 1em; /* Orantılı yazı boyutu */
+}

@@ -1,0 +1,23 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+.login-container {
+  width: 100%; /* Görüntüleme alanının tamamını kaplar */
+  height: 100vh; /* Ekranın tamamını kaplar */
+  margin: 0;
+  padding: 2%;
+  box-sizing: border-box; /* Padding ve border'ı genişliğe dahil eder */
+  background-image: url('src\assets\images\background.jpg');
+  background-size: cover; /* Resmi kapsayıcıya uydurur */
+  background-position: center; /* Resmi ortalar */
+  background-repeat: no-repeat; /* Resmi tekrar etmez */
+}
+
+.form-group {
+  border: 1px solid #ccc;
+  margin-bottom: 1.5%;
+  background: rgba(15, 37, 55, 0.6); /* Transparan arka plan rengi */
+  padding: 2%;
+  border-radius: 8px; /* Kenarları yuvarlatır */
+}
